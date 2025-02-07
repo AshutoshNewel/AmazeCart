@@ -22,7 +22,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           <img
             src={product.thumbnail}
             alt={product.title}
-            className="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 ease-in-out group-hover:scale-105 p-4"
+            className="w-80 h-64 object-cover rounded-t-lg transition-transform duration-300 ease-in-out group-hover:scale-105 p-4"
           />
         </Link>
         <div className="px-5 pb-5">

@@ -40,7 +40,7 @@ async function ProductDetails({ id }: { id: string }) {
           <img
             src={product.thumbnail}
             alt={product.title}
-            className="w-full h-96 object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            className="w-50 h-96 object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
           />
         </div>
 
