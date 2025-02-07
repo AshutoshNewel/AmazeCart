@@ -5,6 +5,18 @@ import Filters from "@/components/Filters";
 import { Suspense } from "react";
 import LoadingProductCard from "@/components/LoadingProductCard";
 
+interface Product {
+  id: number;
+  name: string;
+  title: string;
+  description: string;
+  price: number;
+  category: string;
+  imageUrl: string;
+  thumbnail: string;
+  // Add any other relevant fields
+}
+
 export default async function Home({
   searchParams,
 }: {
@@ -39,7 +51,7 @@ export default async function Home({
               </p>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {products.map((product: any) => (
+                {products.map((product: Product) => (
                   <ProductCard key={product.id} product={product} />
                 ))}
               </div>

@@ -1,5 +1,5 @@
 import AddToCartButton from "@/components/AddToCart";
-import prisma from "./../../../../lib/db";
+// import prisma from "./../../../../lib/db";
 import { Suspense } from "react";
 import LoadingProductDetail from "@/components/LoadingProductDetail";
 
